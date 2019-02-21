@@ -1,3 +1,4 @@
+ !Should not cause an error
 VPLS TEST-VPLS, Id 333, Max mac entries: 2048
  Total vlans: 2, Tagged ports: 2 (0 Up), Untagged ports 2 (0 Up)
  IFL-ID: n/a

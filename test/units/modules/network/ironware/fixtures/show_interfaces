@@ -1,4 +1,5 @@
-10GigabitEthernet1/1 is down, line protocol is down 
+  !This Should not cause an error
+10GigabitEthernet1/1 is down, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff00 (bia 0024.38ae.ff00)
@@ -8,8 +9,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Member of active trunk ports 1/1, primary port
   Member of configured trunk ports 1/1, primary port
   No port name
@@ -30,7 +31,7 @@
   Transmitted 93593 broadcasts, 3157540 multicasts, 291222087 unicasts
   0 output errors, 0 collisions
   NP transmitted 294473223 packets, Received from TM 294473223 packets
-10GigabitEthernet1/2 is up, line protocol is up 
+10GigabitEthernet1/2 is up, line protocol is up
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff01 (bia 0024.38ae.ff01)
@@ -40,8 +41,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   Port name is To ces01.lab e2/1
@@ -62,7 +63,7 @@
   Transmitted 36067 broadcasts, 1676300 multicasts, 36687365 unicasts
   0 output errors, 0 collisions
   NP transmitted 38399732 packets, Received from TM 38399732 packets
-10GigabitEthernet1/3 is down, line protocol is down 
+10GigabitEthernet1/3 is down, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff02 (bia 0024.38ae.ff02)
@@ -72,8 +73,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   Port name is To ces02.lab e2/1
@@ -94,7 +95,7 @@
   Transmitted 10390 broadcasts, 326389 multicasts, 4576809 unicasts
   0 output errors, 0 collisions
   NP transmitted 4913590 packets, Received from TM 4913590 packets
-10GigabitEthernet1/4 is down, line protocol is down 
+10GigabitEthernet1/4 is down, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff03 (bia 0024.38ae.ff03)
@@ -104,8 +105,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Enabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Enabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -126,7 +127,7 @@
   Transmitted 7104 broadcasts, 17011 multicasts, 255554 unicasts
   0 output errors, 0 collisions
   NP transmitted 279669 packets, Received from TM 779636 packets
-10GigabitEthernet1/5 is disabled, line protocol is down 
+10GigabitEthernet1/5 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff04 (bia 0024.38ae.ff04)
@@ -136,8 +137,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -158,7 +159,7 @@
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-10GigabitEthernet1/6 is disabled, line protocol is down 
+10GigabitEthernet1/6 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff05 (bia 0024.38ae.ff05)
@@ -168,8 +169,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -190,7 +191,7 @@
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-10GigabitEthernet1/7 is disabled, line protocol is down 
+10GigabitEthernet1/7 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff06 (bia 0024.38ae.ff06)
@@ -200,8 +201,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -222,7 +223,7 @@
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-10GigabitEthernet1/8 is disabled, line protocol is down 
+10GigabitEthernet1/8 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is 10GigabitEthernet, address is 0024.38ae.ff07 (bia 0024.38ae.ff07)
@@ -232,8 +233,8 @@
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -254,7 +255,7 @@
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/1 is up, line protocol is up 
+GigabitEthernet2/1 is up, line protocol is up
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff30 (bia 0024.38ae.ff30)
@@ -264,8 +265,8 @@ GigabitEthernet2/1 is up, line protocol is up
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor enabled (input and output)
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -286,7 +287,7 @@ GigabitEthernet2/1 is up, line protocol is up
   Transmitted 0 broadcasts, 54203 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 54203 packets, Received from TM 54203 packets
-GigabitEthernet2/2 is up, line protocol is up 
+GigabitEthernet2/2 is up, line protocol is up
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff31 (bia 0024.38ae.ff31)
@@ -296,8 +297,8 @@ GigabitEthernet2/2 is up, line protocol is up
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   Port name is To MikroTik-04 - ether1 - 10.69.5.44
@@ -318,7 +319,7 @@ GigabitEthernet2/2 is up, line protocol is up
   Transmitted 92204 broadcasts, 1344911 multicasts, 14571 unicasts
   0 output errors, 0 collisions
   NP transmitted 1451686 packets, Received from TM 1451686 packets
-GigabitEthernet2/3 is disabled, line protocol is down 
+GigabitEthernet2/3 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff32 (bia 0024.38ae.ff32)
@@ -328,8 +329,8 @@ GigabitEthernet2/3 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -350,7 +351,7 @@ GigabitEthernet2/3 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/4 is down, line protocol is down 
+GigabitEthernet2/4 is down, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff33 (bia 0024.38ae.ff33)
@@ -361,8 +362,8 @@ GigabitEthernet2/4 is down, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   Port name is CANCELLATION TEST
@@ -383,7 +384,7 @@ GigabitEthernet2/4 is down, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/5 is disabled, line protocol is down 
+GigabitEthernet2/5 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff34 (bia 0024.38ae.ff34)
@@ -393,8 +394,8 @@ GigabitEthernet2/5 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -415,7 +416,7 @@ GigabitEthernet2/5 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/6 is disabled, line protocol is down 
+GigabitEthernet2/6 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff35 (bia 0024.38ae.ff35)
@@ -425,8 +426,8 @@ GigabitEthernet2/6 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -447,7 +448,7 @@ GigabitEthernet2/6 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/7 is disabled, line protocol is down 
+GigabitEthernet2/7 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff36 (bia 0024.38ae.ff36)
@@ -457,8 +458,8 @@ GigabitEthernet2/7 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -479,7 +480,7 @@ GigabitEthernet2/7 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/8 is disabled, line protocol is down 
+GigabitEthernet2/8 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff37 (bia 0024.38ae.ff37)
@@ -489,8 +490,8 @@ GigabitEthernet2/8 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -511,7 +512,7 @@ GigabitEthernet2/8 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/9 is disabled, line protocol is down 
+GigabitEthernet2/9 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff38 (bia 0024.38ae.ff38)
@@ -521,8 +522,8 @@ GigabitEthernet2/9 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -543,7 +544,7 @@ GigabitEthernet2/9 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/10 is disabled, line protocol is down 
+GigabitEthernet2/10 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff39 (bia 0024.38ae.ff39)
@@ -553,8 +554,8 @@ GigabitEthernet2/10 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -575,7 +576,7 @@ GigabitEthernet2/10 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/11 is disabled, line protocol is down 
+GigabitEthernet2/11 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff3a (bia 0024.38ae.ff3a)
@@ -585,8 +586,8 @@ GigabitEthernet2/11 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -607,7 +608,7 @@ GigabitEthernet2/11 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/12 is disabled, line protocol is down 
+GigabitEthernet2/12 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff3b (bia 0024.38ae.ff3b)
@@ -617,8 +618,8 @@ GigabitEthernet2/12 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -639,7 +640,7 @@ GigabitEthernet2/12 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/13 is down, line protocol is down 
+GigabitEthernet2/13 is down, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff3c (bia 0024.38ae.ff3c)
@@ -649,8 +650,8 @@ GigabitEthernet2/13 is down, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -671,7 +672,7 @@ GigabitEthernet2/13 is down, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/14 is disabled, line protocol is down 
+GigabitEthernet2/14 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff3d (bia 0024.38ae.ff3d)
@@ -681,8 +682,8 @@ GigabitEthernet2/14 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -703,7 +704,7 @@ GigabitEthernet2/14 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/15 is disabled, line protocol is down 
+GigabitEthernet2/15 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff3e (bia 0024.38ae.ff3e)
@@ -713,8 +714,8 @@ GigabitEthernet2/15 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -735,7 +736,7 @@ GigabitEthernet2/15 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/16 is disabled, line protocol is down 
+GigabitEthernet2/16 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff3f (bia 0024.38ae.ff3f)
@@ -745,8 +746,8 @@ GigabitEthernet2/16 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -767,7 +768,7 @@ GigabitEthernet2/16 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/17 is disabled, line protocol is down 
+GigabitEthernet2/17 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff40 (bia 0024.38ae.ff40)
@@ -777,8 +778,8 @@ GigabitEthernet2/17 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -799,7 +800,7 @@ GigabitEthernet2/17 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/18 is disabled, line protocol is down 
+GigabitEthernet2/18 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff41 (bia 0024.38ae.ff41)
@@ -809,8 +810,8 @@ GigabitEthernet2/18 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -831,7 +832,7 @@ GigabitEthernet2/18 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/19 is disabled, line protocol is down 
+GigabitEthernet2/19 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff42 (bia 0024.38ae.ff42)
@@ -841,8 +842,8 @@ GigabitEthernet2/19 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -863,7 +864,7 @@ GigabitEthernet2/19 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/20 is up, line protocol is up 
+GigabitEthernet2/20 is up, line protocol is up
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff43 (bia 0024.38ae.ff43)
@@ -873,8 +874,8 @@ GigabitEthernet2/20 is up, line protocol is up
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror enabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -895,7 +896,7 @@ GigabitEthernet2/20 is up, line protocol is up
   Transmitted 0 broadcasts, 162876 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 162876 packets, Received from TM 162876 packets
-GigabitEthernet2/21 is up, line protocol is up 
+GigabitEthernet2/21 is up, line protocol is up
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff44 (bia 0024.38ae.ff44)
@@ -905,8 +906,8 @@ GigabitEthernet2/21 is up, line protocol is up
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -927,7 +928,7 @@ GigabitEthernet2/21 is up, line protocol is up
   Transmitted 0 broadcasts, 54203 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 54203 packets, Received from TM 54203 packets
-GigabitEthernet2/22 is disabled, line protocol is down 
+GigabitEthernet2/22 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff45 (bia 0024.38ae.ff45)
@@ -937,8 +938,8 @@ GigabitEthernet2/22 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -959,7 +960,7 @@ GigabitEthernet2/22 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/23 is disabled, line protocol is down 
+GigabitEthernet2/23 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff46 (bia 0024.38ae.ff46)
@@ -969,8 +970,8 @@ GigabitEthernet2/23 is disabled, line protocol is down
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -991,7 +992,7 @@ GigabitEthernet2/23 is disabled, line protocol is down
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 0 packets, Received from TM 0 packets
-GigabitEthernet2/24 is up, line protocol is up 
+GigabitEthernet2/24 is up, line protocol is up
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is GigabitEthernet, address is 0024.38ae.ff47 (bia 0024.38ae.ff47)
@@ -1001,8 +1002,8 @@ GigabitEthernet2/24 is up, line protocol is up
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
   mirror disabled, monitor disabled
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -1023,7 +1024,7 @@ GigabitEthernet2/24 is up, line protocol is up
   Transmitted 0 broadcasts, 54203 multicasts, 0 unicasts
   0 output errors, 0 collisions
   NP transmitted 54203 packets, Received from TM 54203 packets
-Ethernetmgmt1 is disabled, line protocol is down 
+Ethernetmgmt1 is disabled, line protocol is down
   Loopback: None
   STP Root Guard is disabled, STP BPDU Guard is disabled
   Hardware is Ethernet, address is 0024.38ae.ff00 (bia 0024.38ae.ff00)
@@ -1032,8 +1033,8 @@ Ethernetmgmt1 is disabled, line protocol is down
   STP configured to OFF, Priority is level0, flow control enabled
   Priority force disabled, Drop precedence level 0, Drop precedence force disabled
   dhcp-snooping-trust configured to OFF
-  LACP BPDU Forwarding:Disabled 
-  LLDP BPDU Forwarding:Disabled 
+  LACP BPDU Forwarding:Disabled
+  LLDP BPDU Forwarding:Disabled
   Not member of any active trunks
   Not member of any configured trunks
   No port name
@@ -1047,7 +1048,7 @@ Ethernetmgmt1 is disabled, line protocol is down
   Received 1788642 broadcasts, 29469988 multicasts, 1946122 unicasts
   0 packets output, 0 bytes, 0 underruns
   Transmitted 0 broadcasts, 0 multicasts, 0 unicasts
-Loopback1 is up, line protocol is up 
+Loopback1 is up, line protocol is up
   Hardware is Loopback
   No port name
   Internet address is 10.69.0.6/32, IP MTU 1500 bytes, encapsulation LOOPBACK

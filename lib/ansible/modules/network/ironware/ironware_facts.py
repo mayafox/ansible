@@ -267,16 +267,19 @@ class MPLS(FactsBase):
 
     def parse_mpls(self, data):
         parsed = dict()
-        for line in data.split('\n'):
-            if not line:
-                continue
-            elif line[0] == ' ':
-                parsed[key] += '\n%s' % line
+        pattern = re.compile(r'^(LSP|VLL|VPLS) ([^\s,]+)')
+        indices = [index for index, line in enumerate(data.splitlines())
+                   if pattern.match(line)]
+        for index, line_index in enumerate(indices):
+            if index + 1 >= len(indices):
+                next_index = -1
             else:
-                match = re.match(r'^(LSP|VLL|VPLS) ([^\s,]+)', line)
-                if match:
-                    key = match.group(2)
-                    parsed[key] = line
+                next_index = indices[index + 1]
+            match = pattern.match(data.split('\n')[line_index])
+            if match:
+                key = match.group(2)
+                parsed[key] = '/n'.join(data.split('\n')[line_index:
+                                                         next_index])
         return parsed
 
     def populate_vpls(self, vpls):
@@ -507,16 +510,34 @@ class Interfaces(FactsBase):
 
     def parse_interfaces(self, data):
         parsed = dict()
-        for line in data.split('\n'):
-            if not line:
-                continue
-            elif line[0] == ' ':
-                parsed[key] += '\n%s' % line
+        pattern = re.compile(r'^(\S*Ethernet|Loopback|Ve|Tunnel|eth |'
+                             + r'mgmt |loopback |ve |tunnel )(\S+)')
+        indices = [index for index, line in enumerate(data.split('\n'))
+                   if pattern.match(line)]
+        for index, line_index in enumerate(indices):
+            if index + 1 >= len(indices):
+                next_index = -1
             else:
-                match = re.match(r'^(\S+Ethernet|eth )(\S+)', line)
-                if match:
-                    key = match.group(2)
-                    parsed[key] = line
+                next_index = indices[index + 1]
+            match = pattern.match(data.split('\n')[line_index])
+            if match:
+                type = 'e'
+                interface = match.group(2)
+                if 'loopback' in match.group(1).lower():
+                    type = 'lo'
+                if 'tunnel' in match.group(1).lower():
+                    type = 'tun'
+                if 've' in match.group(1).lower():
+                    type = 've'
+                if 'mgmt' in match.group(1).lower():
+                    type = 'm'
+                    interface = '1'
+                if 'mgmt' in match.group(2).lower():
+                    type = 'm'
+                    interface = '1'
+                key = '{} {}'.format(type, interface)
+                parsed[key] = '/n'.join(data.split('\n')[line_index:
+                                                         next_index])
         return parsed
 
     def parse_description(self, data):

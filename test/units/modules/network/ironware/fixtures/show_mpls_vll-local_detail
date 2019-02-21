@@ -1,3 +1,4 @@
+ !Should not cause an error
 VLL TEST-LOCAL VLL-ID 1 IFL-ID --
   State: DOWN - endpoint port is down
   End-point 1:      untagged  e 2/8
