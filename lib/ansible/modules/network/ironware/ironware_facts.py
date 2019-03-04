@@ -477,9 +477,10 @@ class Interfaces(FactsBase):
         return facts
 
     def populate_ipv6_interfaces(self, data):
+        pattern = re.compile(r'\s([0-9a-f]+:+[0-9a-f:]+\/\d+)\s*')
         for key, value in iteritems(data):
             self.facts['interfaces'][key]['ipv6'] = list()
-            addresses = re.findall(r'\s([0-9a-f]+:+[0-9a-f:]+\/\d+)\s*', value, re.M)
+            addresses = pattern.findall(value, re.M)
             for addr in addresses:
                 address, masklen = addr.split('/')
                 ipv6 = dict(address=address, masklen=int(masklen))
