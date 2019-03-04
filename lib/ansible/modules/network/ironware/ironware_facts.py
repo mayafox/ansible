@@ -1,7 +1,8 @@
 #!/usr/bin/python
 #
 # Copyright: Ansible Project
-# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+# GNU General Public License v3.0+
+# (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
@@ -133,7 +134,6 @@ ansible_net_neighbors:
   type: dict
 """
 import re
-
 from ansible.module_utils.network.ironware.ironware import run_commands
 from ansible.module_utils.network.ironware.ironware import ironware_argument_spec, check_args
 from ansible.module_utils.basic import AnsibleModule
@@ -151,7 +151,8 @@ class FactsBase(object):
         self.responses = None
 
     def populate(self):
-        self.responses = run_commands(self.module, self.COMMANDS, check_rc=False)
+        self.responses = run_commands(self.module, self.COMMANDS,
+                                      check_rc=False)
 
     def run(self, cmd):
         return run_commands(self.module, cmd, check_rc=False)
@@ -206,8 +207,10 @@ class Hardware(FactsBase):
 
         data = self.responses[1]
         if data:
-            self.facts['memtotal_mb'] = int(round(int(self.parse_memtotal(data)) / 1024 / 1024, 0))
-            self.facts['memfree_mb'] = int(round(int(self.parse_memfree(data)) / 1024 / 1024, 0))
+            tmp_memtotal = int(self.parse_memtotal(data)) / 1024 / 1024
+            tmp_memfree = int(self.parse_memfree(data)) / 1024 / 1024
+            self.facts['memtotal_mb'] = int(round(tmp_memtotal, 0))
+            self.facts['memfree_mb'] = int(round(tmp_memfree, 0))
 
     def parse_filesystems(self, data):
         return re.findall(r'^Directory of (\S+)', data, re.M)
@@ -218,7 +221,8 @@ class Hardware(FactsBase):
             return match.group(1)
 
     def parse_memfree(self, data):
-        match = re.search(r'(Total Free Memory|Available Memory)\D*(\d+)\s', data, re.M)
+        pattern = re.compile(r'(Total Free Memory|Available Memory)\D*(\d+)\s')
+        match = pattern.search(data, re.M)
         if match:
             return match.group(2)
 
@@ -321,15 +325,19 @@ class MPLS(FactsBase):
 
     def parse_vll_endpoints(self, data):
         facts = list()
-        regex = r'End-point[0-9 ]*: +(?P<tagged>tagged|untagged) +(vlan +(?P<vlan>[0-9]+) +)?(inner- vlan +(?P<innervlan>[0-9]+) +)?(?P<port>e [0-9/]+|--)'
-        matches = re.finditer(regex, data, re.IGNORECASE | re.DOTALL)
+        end_point_regex = re.compile(r'End-point[0-9 ]*: +(?P<tagged>tagged'
+                                     + r'|untagged) +(vlan +(?P<vlan>[0-9]+)'
+                                     + r' +)?(inner- vlan +(?P<innervlan>[0-9]'
+                                     + r'+) +)?(?P<port>e [0-9/]+|--)')
+        vll_peer_regex = re.compile(r'Vll-Peer +: +(?P<vllpeer>[0-9\.]+)'
+                                    + r'.*Tunnel LSP +: +(?P<lsp>\S+)')
+        matches = end_point_regex.finditer(data, re.IGNORECASE | re.DOTALL)
         for n, match in enumerate(matches):
             f = match.groupdict()
             f['type'] = 'local'
             facts.append(f)
 
-        regex = r'Vll-Peer +: +(?P<vllpeer>[0-9\.]+).*Tunnel LSP +: +(?P<lsp>\S+)'
-        matches = re.finditer(regex, data, re.IGNORECASE | re.DOTALL)
+        matches = vll_peer_regex.finditer(data, re.IGNORECASE | re.DOTALL)
         for n, match in enumerate(matches):
             f = match.groupdict()
             f['type'] = 'remote'
@@ -344,15 +352,17 @@ class MPLS(FactsBase):
 
     def parse_vpls_endpoints(self, data):
         facts = list()
-        regex = r'Vlan (?P<vlanid>[0-9]+)\s(?: +(?:L2.*)\s| +Tagged: (?P<tagged>.+)+\s| +Untagged: (?P<untagged>.+)\s)*'
-        matches = re.finditer(regex, data, re.IGNORECASE)
+        vlan_regex = re.compile(r'Vlan (?P<vlanid>[0-9]+)\s(?: +(?:L2.*)\s'
+                                + r'| +Tagged: (?P<tagged>.+)+\s| +Untagged: '
+                                + r'(?P<untagged>.+)\s)*')
+        matches = vlan_regex.finditer(data, re.IGNORECASE)
         for n, match in enumerate(matches):
             f = match.groupdict()
             f['type'] = 'local'
             facts.append(f)
 
-        regex = r'Peer address: (?P<vllpeer>[0-9\.]+)'
-        matches = re.finditer(regex, data, re.IGNORECASE)
+        peer_regex = re.compile(r'Peer address: (?P<vllpeer>[0-9\.]+)')
+        matches = peer_regex.finditer(data, re.IGNORECASE)
         for n, match in enumerate(matches):
             f = match.groupdict()
             f['type'] = 'remote'
@@ -397,7 +407,9 @@ class MPLS(FactsBase):
             return match.group(1)
 
     def parse_lsp_pripath(self, data):
-        match = re.search(r'Pri\. path: ([^\s,]+), up: (\w+), active: (\w+)', data, re.M)
+        pattern = re.compile(r'Pri\. path: ([^\s,]+), up: (\w+), active:'
+                             + r' (\w+)')
+        match = pattern.search(data, re.M)
         if match:
             path = dict()
             path['name'] = match.group(1) if match.group(1) != 'NONE' else None
@@ -406,7 +418,9 @@ class MPLS(FactsBase):
             return path
 
     def parse_lsp_secpath(self, data):
-        match = re.search(r'Sec\. path: ([^\s,]+), active: (\w+).*\n.* status: (\w+)', data, re.M)
+        pattern = re.compile(r'Sec\. path: ([^\s,]+), active: '
+                             + r'(\w+).*\n.* status: (\w+)')
+        match = pattern.search(data, re.M)
         if match:
             path = dict()
             path['name'] = match.group(1) if match.group(1) != 'NONE' else None
@@ -495,10 +509,11 @@ class Interfaces(FactsBase):
 
     def parse_neighbors(self, neighbors):
         facts = dict()
+        pattern = re.compile(r'([\d\/]+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)')
         for line in neighbors.split('\n'):
             if line == '':
                 continue
-            match = re.search(r'([\d\/]+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)', line, re.M)
+            match = pattern.search(line, re.M)
             if match:
                 intf = match.group(1)
                 if intf not in facts:
