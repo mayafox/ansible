@@ -513,7 +513,7 @@ class Interfaces(FactsBase):
         for line in neighbors.split('\n'):
             if line == '':
                 continue
-            match = pattern.search(line, re.M)
+            match = pattern.search(line)
             if match:
                 intf = match.group(1)
                 if intf not in facts:
