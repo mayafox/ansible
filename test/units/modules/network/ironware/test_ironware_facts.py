@@ -71,7 +71,7 @@ class TestIronwareFacts(TestIronwareModule):
         self.assertIn('10.69.1.6', ansible_facts['ansible_net_all_ipv4_addresses'])
         self.assertIn('2001:db8::1', ansible_facts['ansible_net_all_ipv6_addresses'])
         self.assertIn('ansible_net_neighbors', ansible_facts)
-        self.assertIn('e 1/2', ansible_facts['ansible_net_neighbors'].keys())
+        self.assertIn('1/2', ansible_facts['ansible_net_neighbors'].keys())
         self.assertEquals(4096, ansible_facts['ansible_net_memtotal_mb'])
         self.assertEquals(3630, ansible_facts['ansible_net_memfree_mb'])
         self.assertEquals('5.8.0fT163', ansible_facts['ansible_net_version'])
