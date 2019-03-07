@@ -279,10 +279,10 @@ class MPLS(FactsBase):
                 next_index = -1
             else:
                 next_index = indices[index + 1]
-            match = pattern.match(data.split('\n')[line_index])
+            match = pattern.match(data.splitlines()[line_index])
             if match:
                 key = match.group(2)
-                parsed[key] = '/n'.join(data.split('\n')[line_index:
+                parsed[key] = '/n'.join(data.splitlines()[line_index:
                                                          next_index])
         return parsed
 
@@ -510,7 +510,7 @@ class Interfaces(FactsBase):
     def parse_neighbors(self, neighbors):
         facts = dict()
         pattern = re.compile(r'([\d\/]+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)')
-        for line in neighbors.split('\n'):
+        for line in neighbors.splitlines():
             if line == '':
                 continue
             match = pattern.search(line)
@@ -528,14 +528,14 @@ class Interfaces(FactsBase):
         parsed = dict()
         pattern = re.compile(r'^(\S*Ethernet|Loopback|Ve|Tunnel|eth |'
                              + r'mgmt |loopback |ve |tunnel )(\S+)')
-        indices = [index for index, line in enumerate(data.split('\n'))
+        indices = [index for index, line in enumerate(data.splitlines())
                    if pattern.match(line)]
         for index, line_index in enumerate(indices):
             if index + 1 >= len(indices):
                 next_index = -1
             else:
                 next_index = indices[index + 1]
-            match = pattern.match(data.split('\n')[line_index])
+            match = pattern.match(data.splitlines()[line_index])
             if match:
                 type = 'e'
                 interface = match.group(2)
@@ -552,7 +552,7 @@ class Interfaces(FactsBase):
                     type = 'm'
                     interface = '1'
                 key = '{} {}'.format(type, interface)
-                parsed[key] = '/n'.join(data.split('\n')[line_index:
+                parsed[key] = '/n'.join(data.splitlines()[line_index:
                                                          next_index])
         return parsed
 
